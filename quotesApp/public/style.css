@@ -1,0 +1,31 @@
+body{
+    background-color: whitesmoke;
+    
+}
+#logo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0098d7;
+}
+.card_{
+    background-color: #CEDFEF;
+    
+}
+.cards_body_style{
+    background-color: #EED8B7;
+    border-radius: 10px;
+    font-family: merriweather;
+    font-size: 20px;
+
+}
+
+.nav_style{
+    background-color: #fade98 !important;
+    padding-left: 10%;
+}
+.nav_inside{
+    padding-left: 15%;
+}
+.nav_inside ul li{
+    padding-left: 2%;
+    width: 300px;
+}

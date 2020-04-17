@@ -1,0 +1,21 @@
+
+<%- include('partials/head'); -%>
+<%- include('partials/nav'); -%>
+
+<% for (var i = 0 ;i < quotes.length  ; i++) { %>
+
+    <div class="card card_" style="width: 80rem; margin-top: 1rem;margin-bottom: 1rem; ">
+        <div class="card-body cards_body_style">
+            <h5 class="card-title"> _<strong><%= quotes[i].author %></strong> </h5>
+            <p class="card-text">" <%= quotes[i].quote %> " </p>
+            <a href="/deletequote/<%= quotes[i].quote_id %>" class="btn btn-primary">DELETE</a>
+            
+            <button  type="button" class="btn btn-primary" data-toggle="modal" onClick='test("<%= quotes[i].author %>", "<%=quotes[i].quote %>", <%=quotes[i].quote_id %>)' data-target="#exampleModal1" data-whatever="@fat"> UPDATE</button>
+                   
+        </div>
+    </div> 
+   
+<% };%>
+<%- include('partials/modal1'); -%>
+<%- include('partials/modal'); -%>
+<%- include('partials/foot'); -%>
